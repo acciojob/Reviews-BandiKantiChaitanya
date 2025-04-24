@@ -8,7 +8,7 @@ function Review({data}) {
     function checkIndex(number) {
         if (number < 0) {
           return data.length-1; 
-        } else if (number >= data.length-1) {
+        } else if (number >= data.length) {
           return 0; 
         }
         return number;
@@ -44,7 +44,7 @@ function Review({data}) {
                 <p className="info">{text}</p>
                 <div style={{display:'flex',justifyContent:'space-between'}}  >
                 <button className="prev-btn" onClick={handlePrevious} >Previous</button>
-                  <button className="random-btn"  onClick={handleRandom} >Random</button>
+                  <button className="random-btn"  onClick={handleRandom} >surprise me</button>
                   <button className="next-btn"  onClick={handleNext}  >Next</button>
                  {/* <button className="next-btn"  onClick={()=>{handleNext(index)}} disabled={index>=data.length-1} >Next</button> */}
                 </div>
