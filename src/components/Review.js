@@ -7,9 +7,9 @@ function Review({data}) {
 
     function checkIndex(number) {
         if (number < 0) {
-          return 0; 
-        } else if (number >= data.length-1) {
           return data.length-1; 
+        } else if (number >= data.length-1) {
+          return 0; 
         }
         return number;
       }
